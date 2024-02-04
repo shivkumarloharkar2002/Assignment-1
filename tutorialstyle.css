@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
+        'navbar navbar navbar navbar'
+        'sidebar content content content'
+        'footer footer footer footer';
+}
+
+p{
+    font-size: 20px;
+}
+/* Navbar */
+.navbar {
+    background-color: rgb(42, 38, 38);
+    grid-area: navbar;
+    list-style-type:none;
+    width: 100%;
+    overflow:hidden;
+    position: fixed;
+}
+.nav-item{
+    float: left;
+    padding: 14px;
+}
+.nav-item{
+    text-decoration: none;
+    font-size:25px;
+    color: rgb(255, 255, 255);
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.navbar a:hover{
+    background-color: rgb(0, 0, 0);
+}
+    
+/* content */
+.content {
+    align-items: start;
+    padding: 20px;
+    padding-top: 68px;
+    grid-area: content;
+    /* background-color: rgb(255, 255, 255); */
+    height:100%;
+
+}
+.divimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-ul{
+    padding:10px 40px;
+}
+.content-li{
+    margin-bottom: 10px;
+}
+.content-div{
+    align-items: flex-start;
+    margin-bottom:10px;
+    color: white;
+    background: grey;
+    border-radius: 0 30px;
+    padding: 10px
+}
+ 
+/* sidebar */
+.sidebar {
+    /* position: fixed; */
+    background-color: rgb(0, 0, 0);
+    padding-top: 68px;
+    grid-area: sidebar;
+    width: 250px;
+    /* overflow: hidden; */
+    height:100%;
+    padding-left: 20px;
+}
+.sidebar-ul{
+    margin-left: 20px;
+}
+
+.sidebar-li{
+    display: block;
+    font-size:20px ;
+    margin-bottom: 15px;
+    color: white;
+    text-decoration: none;
+}
+.sidebar-li:hover{
+    background-color: grey;
+}
+
+/* footer */
+.footer {
+    background-color: rgb(246, 151, 151);
+    grid-area: footer;
+}
+
+/* wind */
+#wind-content{
+    background-position: 50%;
+    background-size: cover;
+    background-image: url(wind\ energy.jpg),url(Wind-power2.jpg);
+}
+
+.li-div h4{
+    font-size: 15px;
+    font-family:Arial;
+}
+.li-div:hover{
+    transition-duration:0.8s;
+    background-color: white;
+    opacity: 1;
+
+}
+
+/* Solar */
+
+/* #animation{
+        background-color: green;
+        width: 100%;
+        height: 68px;
+        /* position: relative; */
+        animation: r;
+        animation-duration: 1s;
+        /* animation-delay: 0.5s; */
+        animation-iteration-count: 2;
+        /* animation-timing-function: ease-out; */
+        animation-direction: alternate;
+    }
+    @keyframes r {
+        from{
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    } */
